@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+.navbar{
+    background-color: #fd6569;
+    padding: 15px;
+    
+}
+.book-container{
+    width:30%;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 35px;
+    border-radius: 10px;
+    display: inline-block;
+    flex-basis: 25%;
+    
+
+}
+.book-container h2{
+        color: #fd6569;
+}
+.book-container button{
+    background-color: #fd6569;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+}
+#add{
+      background-color: #fd6569;
+      border-radius: 100%;
+      font-weight: 900;
+      border: none;
+      position: fixed;
+      bottom: 30px;
+      right: 40px;
+      font-size: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      color: black;
+     
+}
+.container{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+.popup-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+
+}
+.popup-box
+{
+    background-color: #fd6569;
+    width: 40%;
+    padding: 40px;
+    height: 250px;
+    z-index:2;
+    position: absolute;
+    border-radius: 10px;
+    top: 20%;
+    left: 30%;
+    display: none;
+}
+.popup-box input{
+    background-color: transparent;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-bottom: solid black 3px;
+    font-size: 20px;
+}
+.popup-box textarea{
+    background-color: transparent;
+    width: 100%;
+    padding: 14px;
+    border: solid black 3px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+.popup-box button{
+    background-color: black;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+    color: white;
+    border: none;
+}
+.popup-box input::placeholder{
+    color: black;
+}
+.popup-box textarea::placeholder{
+    color: black;
+}
+.popup-box input:focus{
+    outline: none;
+}
+.popup-box textarea:focus{
+    outline: none;
+}
+button:hover{
+    color: #f33b41;
+    background-color: white;
+    cursor: pointer;
+}
+@media screen and (max-width:1000px) {
+    .container{
+        justify-content: space-between;
+        
+    }
+    .book-container{
+        flex-basis: 35%;
+    }
+}
+@media screen and (max-width:1050px) {
+    .popup-box{
+        width:50%;
+        left:23%;
+    }
+}
+@media screen and (max-width:650px) {
+    
+    .book-container{
+        flex-basis: 100%;
+        width: 60%;
+    
+    }
+    .popup-box{
+        left:2%;
+        width: 80%;
+    }
+}
+@media screen and (max-width:450px) {
+    .popup-box{
+        left: 5%;
+        width:68%;
+        
+
+    }
+    
+   
+    
+}
